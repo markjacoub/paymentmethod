@@ -17,44 +17,78 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
-
-        <table>
+    <div class="container">
+      <div class = "row">
+        <div class = "col-md-8">
+          <h2>Transactions</h2>
+          <!--
+          <p>Green Successful Tx</p>
+          <p>Yellow waiting for confirmation</p>
+          <p>Red Rejected TX</p>-->
+          <div class ="">
+            <table class="table table-hover able-wrapper-scroll-y my-custom-scrollbar">
+              <thead>
                 <tr>
-                  <th>Company</th>
-                  <th>Contact</th>
-                  <th>Country</th>
+                  <th>Ref#</th>
+                  <th>Card</th>
+                  <th>Bennifeciary</th>
+                  <th>Amount</th>
                 </tr>
-                <tr>
-                  <td>Alfreds Futterkiste</td>
-                  <td>Maria Anders</td>
-                  <td>Germany</td>
+              </thead>
+              <tbody>
+                <tr class="table-success" >
+                  <td>11111</td>
+                  <td>Master Card</td>
+                  <td>Souq</td>
+                  <td>500</td>
                 </tr>
-                <tr>
-                  <td>Centro comercial Moctezuma</td>
-                  <td>Francisco Chang</td>
-                  <td>Mexico</td>
+                <tr class= "table-warning">
+                  <td>2222</td>
+                  <td>Visa</td>
+                  <td>Amazon</td>
+                  <td>2000</td>
                 </tr>
-                <tr>
-                  <td>Ernst Handel</td>
-                  <td>Roland Mendel</td>
-                  <td>Austria</td>
+                <tr class= "table-danger">
+                  <td>3333</td>
+                  <td>CIB Premium</td>
+                  <td>Otlob</td>
+                  <td>95</td>
                 </tr>
-                <tr>
-                  <td>Island Trading</td>
-                  <td>Helen Bennett</td>
-                  <td>UK</td>
-                </tr>
-                <tr>
-                  <td>Laughing Bacchus Winecellars</td>
-                  <td>Yoshi Tannamuri</td>
-                  <td>Canada</td>
-                </tr>
-                <tr>
-                  <td>Magazzini Alimentari Riuniti</td>
-                  <td>Giovanni Rovelli</td>
-                  <td>Italy</td>
-                </tr>
-              </table>
-
+                
+              </tbody>
+            </table>
+          </div>
+          <div class="card text-white bg-success mb-3">
+            <div class="card-header">Ref: 11111</div>
+            <div class="card-body">
+              <h5 class="card-title">Successful Transaction</h5>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="table-success" >
+                    <td>klmdf</td>
+                    <td>3</td>
+                    <td>100</td>
+                  </tr>
+                  <tr class="table-success" >
+                    <td>klmdf</td>
+                    <td>3</td>
+                    <td>50</td>
+                  </tr>
+                  <tr class="table-success" >
+                    <td>klmdf</td>
+                    <td>1</td>
+                    <td>50</td>
+                  </tr>
+            </div>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
